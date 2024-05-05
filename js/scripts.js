@@ -5,3 +5,11 @@
  */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 0) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+});
